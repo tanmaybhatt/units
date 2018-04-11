@@ -1,5 +1,14 @@
-var Units =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("Units", [], factory);
+	else if(typeof exports === 'object')
+		exports["Units"] = factory();
+	else
+		root["Units"] = factory();
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -395,3 +404,4 @@ eval("module.exports = __webpack_require__(/*! ./src/index.js */\"./src/index.js
 /***/ })
 
 /******/ });
+});

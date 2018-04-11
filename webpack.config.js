@@ -5,7 +5,9 @@ module.exports = {
   output: {
     library: 'Units',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'Units.'+(prod? 'min.': '')+'js'
+    filename: 'Units.'+(prod? 'min.': '')+'js',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
