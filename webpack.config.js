@@ -1,6 +1,6 @@
 var path = require('path');
 var prod = process.env.NODE_ENV == 'production'
-module.exports = {
+var config = {
   entry: ['./src/index.js'],
   output: {
     library: 'Units',
@@ -19,3 +19,27 @@ module.exports = {
   },
   mode: process.env.NODE_ENV || 'development'
 };
+
+var configA = {
+  ...config,
+  output: {
+    library: 'Units',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'Units.common.'+(prod? 'min.': '')+'js',
+    libraryTarget: 'commonjs'
+  },
+}
+
+var configB = {
+  ...config,
+    output: {
+      library: 'Units',
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'Units.'+(prod? 'min.': '')+'js',
+      libraryTarget: 'global'
+    },
+}
+
+module.exports = [
+  configA, configB
+]

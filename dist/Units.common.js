@@ -1,4 +1,4 @@
-window["Units"] =
+exports["Units"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

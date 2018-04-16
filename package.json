@@ -2,7 +2,7 @@
   "name": "units",
   "version": "0.1.0",
   "description": "",
-  "main": "./dist/Units.js",
+  "main": "./dist/Units.common.js",
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "build": "./node_modules/.bin/webpack",
