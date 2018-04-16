@@ -10,6 +10,13 @@ import Pressure from './properties/Pressure';
 module.exports = class Units {
     constructor(config) {
         this.config = config || defaultConfig || {};
+        this.bindThis();
+    }
+    setConfig = (config) => {
+        this.config = config;
+        this.bindThis();
+    }
+    bindThis = () => {
         this.Currency = Currency.bind(this);
         this.Currency.units = ["rupee", "dollar", "KWD"];
         this.Temperature = Temperature.bind(this);
