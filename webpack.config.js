@@ -26,7 +26,7 @@ var configA = {
     library: 'Units',
     path: path.resolve(__dirname, 'dist'),
     filename: 'Units.common.'+(prod? 'min.': '')+'js',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs2'
   },
 }
 
