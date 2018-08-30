@@ -13,7 +13,7 @@ export default function( { value, providedIn, requiredIn, decimalPlaces, stringF
         convertedValue = convert(value,config[factorName]);
     }
     var returnValue = convertedValue;
-    if(decimalPlaces) {
+    if(typeof decimalPlaces !== 'undefined' && decimalPlaces !== null) {
         returnValue = decimalValueGenerator(returnValue,decimalPlaces);
     }
     if(stringFormat) {
