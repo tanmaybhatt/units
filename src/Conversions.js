@@ -1,6 +1,9 @@
 import { rupeeToDollar, dollarToRupee } from './conversions/rupeeDollar';
 import { rupeeToKWD, KWDToRupee } from './conversions/rupeeKWD';
-import { fahrenheitToCelcius, celciusToFahrenheit } from './conversions/fahrenheitCelcius';
+import {
+    fahrenheitToCelcius,
+    celciusToFahrenheit,
+} from './conversions/fahrenheitCelcius';
 import { mileToKm, kmToMile } from './conversions/kmMile';
 import { mphToKmph, kmphToMph } from './conversions/kmphMph';
 import { literToGallon, gallonToLiter } from './conversions/literGallon';
@@ -11,16 +14,4 @@ export default {
     dollarToRupee,
     rupeeToKWD,
     KWDToRupee,
-    fahrenheitToCelcius,
-    celciusToFahrenheit,
-    mileToKm,
-    kmToMile,
-    literToGallon,
-    gallonToLiter,
-    mphToKmph,
-    kmphToMph,
-    kgToPound,
-    poundToKg,
-    kpaToPsi,
-    psiToKpa
-}
+};

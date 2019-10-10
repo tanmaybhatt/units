@@ -20,18 +20,18 @@ module.exports = class Units {
         this.Currency = Currency.bind(this);
         this.Currency.units = ["rupee", "dollar", "KWD"];
         this.Temperature = Temperature.bind(this);
-        this.Temperature.units = ["celcius", "fahrenheit"]
+        this.Temperature.units = ["C", "F"]
         this.Distance = Distance.bind(this);
-        this.Distance.units = ["km","mile"];
+        this.Distance.units = ["km","mi"];
         this.Volume = Volume.bind(this);
-        this.Volume.units = ["liter","gallon"];
+        this.Volume.units = ["l","gal"];
         this.Fuel = Fuel.bind(this);
-        this.Fuel.units = ["liter","gallon"];
+        this.Fuel.units = ["l","gal"];
         this.Mass = Mass.bind(this);
-        this.Mass.units = ["kg","pound"];
+        this.Mass.units = ["kg","lb"];
         this.Speed = Speed.bind(this);
-        this.Speed.units = ["kmph","mph"]
+        this.Speed.units = ["km/h","m/h"]
         this.Pressure = Pressure.bind(this);
-        this.Pressure.units = ["kpa","psi"];
+        this.Pressure.units = ["kPa","psi"];
     }
 }

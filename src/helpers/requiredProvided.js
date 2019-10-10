@@ -1,5 +1,9 @@
 import firstLetterCap from "./firstLetterCap";
-export default function({providedIn, requiredIn, config, defaultValue}) {
+export default function({providedIn, requiredIn, config, defaultValue, from, to}) {
+    if(!providedIn && from)
+        providedIn = from;
+    if(!requiredIn && to)
+        requiredIn = to;
     if(!providedIn)
         providedIn = {
             ...defaultValue
