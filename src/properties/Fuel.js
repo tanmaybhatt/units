@@ -13,13 +13,9 @@ export default function(
         to,
     } = {}
 ) {
-    var config;
+    var config = getConfig();
     if (configOverrides) config = configOverrides;
-    else
-        config =
-            this && this.config
-                ? this.config.fuel || this.config.volume || {}
-                : {};
+    else config = config ? config.fuel || config.volume || {} : {};
     var { providedIn, requiredIn } = requiredProvided({
         providedIn,
         requiredIn,

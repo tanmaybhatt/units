@@ -13,9 +13,9 @@ export default function(
         toBest,
     } = {}
 ) {
-    var config;
+    var config = getConfig();
     if (configOverrides) config = configOverrides;
-    else config = this && this.config ? this.config.currency || {} : {};
+    else config = config ? config.currency || {} : {};
     var { providedIn, requiredIn } = requiredProvided({
         from,
         to,
