@@ -13,9 +13,9 @@ export default function(
         to,
     } = {}
 ) {
-    var config;
+    var config = getConfig();
     if (configOverrides) config = configOverrides;
-    else config = this && this.config ? this.config.mass || {} : {};
+    else config = config ? config.mass || {} : {};
     var { providedIn, requiredIn } = requiredProvided({
         providedIn,
         requiredIn,

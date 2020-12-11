@@ -13,9 +13,9 @@ export default function(
         toBest,
     } = {}
 ) {
-    var config;
+    var config = getConfig();
     if (configOverrides) config = configOverrides;
-    else config = this && this.config ? this.config.pressure || {} : {};
+    else config = config ? config.pressure || {} : {};
     var { providedIn, requiredIn } = requiredProvided({
         providedIn,
         requiredIn,
