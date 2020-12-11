@@ -47,8 +47,8 @@ export const defaultConfig = {
             symbol: 'kg',
         },
     },
-    dollarPerRupee: 0.015,
-    rupeePerDollar: 65,
-    KWDPerRupee: 0.0046,
-    rupeePerKWD: 217,
+    dollarPerRupee: 0.014,
+    rupeePerDollar: 72,
+    KWDPerRupee: 0.0041,
+    rupeePerKWD: 241,
 };
